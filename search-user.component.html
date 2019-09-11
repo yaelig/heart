@@ -1,0 +1,18 @@
+
+<div class="heroes" *ngIf="allUser">
+        <div *ngFor="let item of allUser" (click)="onSelect(item)">
+          <a [routerLink]='deatail'  class="badge">{{item.id}}</a> {{item.name}}
+           
+</div>
+    </div>
+    <form id="pdfs" *ngIf="x">
+                  
+            <p  *ngFor="let item of shoepdf">
+                    <button >{{item.name}} </button>
+            </p>
+          
+</form>
+                
+   
+     
+     
