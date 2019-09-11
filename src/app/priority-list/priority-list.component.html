@@ -1,0 +1,11 @@
+<p>priority-list works!</p>
+
+<div *ngIf="allUser">
+    <span >
+        <ul *ngFor="let item of allUser">          
+            <li [value]="item.id" (click)="checked()" >
+                    <a href="{{item.url}}">{{item.name}}</a>
+               </li>
+        </ul>
+    </span>
+</div>
